@@ -48,6 +48,11 @@ public class InMemoryUserRepository implements UserRepository{
         userMap.put(user.id, user);
 
     }
+
+    @Override
+    public void deleteUser(int id) {
+        userMap.remove(id);
+    }
 }
 //todo:
 // how use a post request

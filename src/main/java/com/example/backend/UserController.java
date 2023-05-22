@@ -48,4 +48,10 @@ public class UserController {
     public void updateUser(@RequestBody User user){
         userRepository.updateUser(user);
     }
+
+    //delete user
+    @DeleteMapping("/user")
+    public void deleteUser(@RequestParam int id){
+        userRepository.deleteUser(id);
+    }
 }

@@ -5,4 +5,6 @@ public interface UserRepository {
     void save(User user);
 
     void updateUser(User user);
+
+    void deleteUser(int id);
 }
